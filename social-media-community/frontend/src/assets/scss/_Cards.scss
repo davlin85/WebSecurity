@@ -1,0 +1,402 @@
+.card {
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: 0.8rem;
+  background-color: $card-background-color;
+  width: 312px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+  box-shadow: $card-shadow-one 0px 6px 12px -2px,
+    $card-shadow-two 0px 3px 7px -3px;
+  border-radius: 1rem;
+
+  a {
+    color: $root-link-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .img {
+    border-top-left-radius: 1rem 1rem;
+    border-top-right-radius: 1rem;
+    background: $navbar-background-color;
+    background: linear-gradient(
+      180deg,
+      $navbar-linear-gradient-one 0%,
+      $navbar-linear-gradient-two 100%,
+      $navbar-linear-gradient-three 100%
+    );
+    padding: 1rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.7rem;
+    text-align: center;
+    border-bottom: 1px solid $card-border-color;
+    transition: all 400ms ease-in-out;
+    opacity: 60%;
+  }
+
+  .card-image {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+
+  .userinfo {
+    padding-top: 0.3rem;
+    background-color: $userinfo-background-color;
+    text-align: center;
+    transition: all 400ms ease-in-out;
+    opacity: 80%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: $card-shadow-one 0px 6px 12px -2px,
+      $card-shadow-two 0px 3px 7px -3px;
+
+    .date {
+      font-family: $roboto-slab;
+      color: rgb(64, 80, 80);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding-top: 0.2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      transition: all 400ms ease-in-out;
+    }
+
+    .author {
+      font-family: $roboto-slab;
+      color: rgb(64, 80, 80);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.1rem 1rem 0.6rem 1rem;
+      transition: all 400ms ease-in-out;
+    }
+  }
+
+  .title {
+    font-family: $roboto-slab;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .content {
+    font-family: $roboto;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 1.2rem;
+  }
+}
+
+.card:hover {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  box-shadow: $card-hover-shadow-one 0px 50px 100px -20px,
+    $card-hover-shadow-two 0px 30px 60px -30px;
+  transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 100%;
+
+  .img {
+    background-color: $card-hover-img-background;
+    transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 100%;
+  }
+
+  .userinfo {
+    transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 100%;
+
+    .date {
+      color: $card-date-text-color;
+      transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .author {
+      color: $card-user-text-color;
+      transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}
+
+.cardpost {
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: 0.8rem;
+  background-color: $card-background-color;
+  width: 450px;
+  box-shadow: $card-shadow-one 0px 6px 12px -2px,
+    $card-shadow-two 0px 3px 7px -3px;
+  border-radius: 1rem;
+
+  .img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background: $navbar-background-color;
+    background: linear-gradient(
+      180deg,
+      $navbar-linear-gradient-one 0%,
+      $navbar-linear-gradient-two 100%,
+      $navbar-linear-gradient-three 100%
+    );
+    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $card-border-color;
+    opacity: 100%;
+  }
+
+  .card-image {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .card-body {
+
+    .title {
+      padding-left: 1.5rem;
+      padding-top: 0.8rem;
+      padding-bottom: 0.2rem;
+      font-family: $roboto-slab;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    .form {
+      margin-bottom: 0.2rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .submit {
+      padding: 1rem 1.5rem 2rem 1.5rem;
+    }
+
+    .error {
+      padding-left: 2.5rem;
+      color: $card-not-valid-color;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .notvalid {
+    font-family: $roboto;
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    text-align: center;
+    font-style: italic;
+    color: $card-not-valid-color;
+  }
+}
+
+.carddetails {
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: 0.8rem;
+  background-color: $card-background-color;
+  width: 450px;
+  box-shadow: $card-shadow-one 0px 6px 12px -2px,
+    $card-shadow-two 0px 3px 7px -3px;
+  border-radius: 1rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background: $navbar-background-color;
+    background: linear-gradient(
+      180deg,
+      $navbar-linear-gradient-one 0%,
+      $navbar-linear-gradient-two 100%,
+      $navbar-linear-gradient-three 100%
+    );
+    padding: 1rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.7rem;
+    text-align: center;
+    border-bottom: 1px solid $card-border-color;
+  }
+
+  .card-image {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .userinfo {
+    padding-top: 0.3rem;
+    background-color: $userinfo-background-color;
+    text-align: center;
+    transition: all 400ms ease-in-out;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: $card-shadow-one 0px 6px 12px -2px,
+      $card-shadow-two 0px 3px 7px -3px;
+
+    .date {
+      font-family: $roboto-slab;
+      color: $card-date-text-color;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding-top: 0.2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      transition: all 400ms ease-in-out;
+    }
+
+    .author {
+      font-family: $roboto-slab;
+      color: $card-user-text-color;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.1rem 1rem 0.6rem 1rem;
+      transition: all 400ms ease-in-out;
+    }
+  }
+
+  .title {
+    color: $root-link-color;
+    font-family: $roboto-slab;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .content {
+    color: $root-link-color;
+    font-family: $roboto;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 1.2rem;
+  }
+
+  .edit {
+    font-family: $roboto;
+    @include flex;
+    justify-content: space-between;
+
+    .update {
+      font-size: 0.9rem;
+      padding-bottom: 0.8rem;
+      padding-top: 0.7rem;
+      padding-left: 1.5rem;
+      padding-right: 1.2rem;
+
+      a {
+        color: $card-hover-img-background;
+      }
+    }
+
+    .delete {
+      font-size: 0.9rem;
+      padding-bottom: 0.8rem;
+      padding-top: 0.7rem;
+      padding-left: 1.5rem;
+      padding-right: 1.2rem;
+
+      a {
+        color: $card-date-text-color;
+      }
+    }
+  }
+}
+
+.cardsignin {
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: 0.8rem;
+  background-color: $card-background-color;
+  width: 375px;
+  box-shadow: $card-shadow-one 0px 6px 12px -2px,
+    $card-shadow-two 0px 3px 7px -3px;
+  border-radius: 1rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background: $navbar-background-color;
+    background: linear-gradient(
+      180deg,
+      $navbar-linear-gradient-one 0%,
+      $navbar-linear-gradient-two 100%,
+      $navbar-linear-gradient-three 100%
+    );
+    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    text-align: center;
+    border-bottom: 1px solid $card-border-color;
+
+    .userinfo {
+      padding-top: 0.5rem;
+      text-align: center;
+      transition: all 400ms ease-in-out;
+
+      .logotype {
+        color: $navbar-link-color;
+        font-family: $roboto-slab;
+        font-size: 1.4rem;
+        text-shadow: 2.2px 2.2px 1.5px $logotype-shadow;
+        padding: 0rem 1rem 0.3rem 1rem;
+        transition: all 400ms ease-in-out;
+      }
+    }
+  }
+
+  .content {
+    color: $root-link-color;
+    font-family: $roboto;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    line-height: 1.2rem;
+  }
+
+  .edit {
+    font-family: $roboto;
+    @include flex;
+    justify-content: flex-end;
+
+    .signin {
+      font-size: 0.85rem;
+      padding-bottom: 1rem;
+      padding-top: 0.8rem;
+      padding-left: 1.5rem;
+      padding-right: 1rem;
+
+      a {
+        color: $card-date-text-color;
+      }
+    }
+  }
+}

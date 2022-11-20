@@ -1,0 +1,35 @@
+@import "./Mixin";
+
+#viewcontent {
+  margin-bottom: 2rem;
+  margin-top: 20px;
+
+  .viewcontent-container {
+    @include flex;
+    justify-content: space-between;
+    font-family: $roboto-slab;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $messages-border-color;
+
+    .title {
+      margin: 0;
+    }
+
+    .create {
+      margin-top: 0.42rem;
+      font-family: $roboto;
+      font-size: 0.95rem;
+    }
+  }
+
+  .viewcontent-storage {
+    @include grid;
+    place-items: center;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  
+}

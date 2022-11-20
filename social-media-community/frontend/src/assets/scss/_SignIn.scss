@@ -1,0 +1,14 @@
+@import "./Mixin";
+
+#signin {
+  background: #6aa3a3;
+  @include grid;
+  place-items: center;
+  height: 100vh;
+
+  .signin-container {
+    margin-top: -250px;
+    @include grid;
+    place-items: center;
+  }
+}

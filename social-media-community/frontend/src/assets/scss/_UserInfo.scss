@@ -1,0 +1,42 @@
+@import "./Mixin";
+
+#userinfo {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  background: $userinfo-background-color;
+  background: linear-gradient(
+    180deg,
+    $userinfo-linear-gradient-one 0%,
+    $userinfo-linear-gradient-two 92%,
+    $userinfo-linear-gradient-three 100%
+  );
+  box-shadow: $userinfo-shadow-one 0px 1px 5px -5px,
+    $userinfo-shadow-two 0px 8px 5px -8px;
+  color: $userinfo-text-color;
+  .userinfo-container {
+    @include flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+
+    .user {
+      @include for-mobile {
+        font-size: 0.8rem;
+      }
+    }
+
+    .user-signout {
+      ul {
+        @include flex;
+        list-style: none;
+        gap: 1.2rem;
+
+        li {
+          @include for-mobile {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

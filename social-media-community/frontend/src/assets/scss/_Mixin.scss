@@ -1,0 +1,21 @@
+@import "./Variables";
+
+@mixin grid {
+  display: grid;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin for-mobile {
+  @media (min-width: 340px) and (max-width: 760px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
